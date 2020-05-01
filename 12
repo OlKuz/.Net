@@ -1,0 +1,24 @@
+using System;
+
+namespace ConsoleApp13
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Нажмите Y или N ");
+            string selection = Console.ReadLine();
+            switch (selection)
+            { 
+              case "Y":
+                Console.WriteLine("Вы нажали букву Y");
+                    break;
+              case "N":
+                Console.WriteLine("Вы нажали N");
+                    break;
+              default:
+                    Console.WriteLine("Вы нажали неизвестную букву");
+                    break;
+
+            }
+        }
