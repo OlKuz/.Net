@@ -1,0 +1,29 @@
+using System;
+
+namespace ConsoleApp26
+{
+    class Person
+    {
+        public string name;
+        public int age = 18;
+
+        public void GetIn()
+        {
+            Console.WriteLine($" Имя: {name} Возрост: {age}");
+        }
+    }
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            Person tom= new Person();
+            tom.GetIn();
+
+            tom.name = "Tom";
+            tom.age = 34;
+            tom.GetIn();
+            Console.ReadLine();
+        }
+    }
+}
