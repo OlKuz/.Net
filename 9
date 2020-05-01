@@ -1,0 +1,18 @@
+using System;
+
+namespace ConsoleApp9
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int x = 45; // Значение, которое надо зашифровать - в двоичной форме 101101
+            int key = 102; //Пусть это будет ключ - в двоичной форме 1100110
+            int encrypt = x ^ key; 
+            Console.WriteLine("Зашифрованное число: " + encrypt);
+
+            int decrypt = encrypt ^ key; 
+            Console.WriteLine("Расшифрованное число: " + decrypt);
+        }
+    }
+}
