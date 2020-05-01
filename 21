@@ -1,0 +1,26 @@
+using System;
+
+namespace ConsoleApp22
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int x = 10;
+            int area;
+            int per;
+            GetPar(x, 15, out area, out per);
+            Console.WriteLine("" + area);
+            Console.WriteLine("" + per);
+
+            Console.ReadKey();
+
+
+        }
+        static void GetPar(int x, out int area, out int per)
+        {
+            area = x * y;
+            per = (x + y) / 2;
+        }
+    }
+}
