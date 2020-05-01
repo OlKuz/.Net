@@ -1,0 +1,41 @@
+using System;
+
+namespace ConsoleApp24
+{
+    class Program
+    {
+        enum Operation { 
+
+        Add =1,
+        Substract,
+        Mulyiply,
+        Divide
+        }
+        static void MathOp(double x,double y,Operation op)
+        {
+            double result = 0.0;
+            switch (op)
+            {
+                case Operation.Add:
+                    result = x + y;
+                    break;
+                case Operation.Substract:
+                    result = x - y;
+                    break;
+                case Operation.Mulyiply:
+                    result = x * y;
+                    break;
+                case Operation.Divide:
+                    result = x / y;
+                    break;
+            }
+            Console.WriteLine("Результат операции = {0}", result);
+        }
+        static void Main(string[] args)
+        {
+            MathOp(10, 15, Operation.Add);
+            MathOp(12, 17, Operation.Mulyiply);
+            Console.ReadLine();
+        }
+    }
+}
