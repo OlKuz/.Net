@@ -1,0 +1,22 @@
+using System;
+
+namespace ConsoleApp21
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int x = 15;
+            int y = 25;
+            Add(ref x, y);
+            Console.WriteLine(x);
+
+            Console.ReadLine();
+
+        }
+        static void Add(ref int x, int y)
+        {
+            x += y;
+        }
+    }
+}
