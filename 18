@@ -1,0 +1,28 @@
+using System;
+
+namespace ConsoleApp18
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string message = GetHello();
+            int minus = GetMinus();
+
+            Console.WriteLine(message);
+            Console.WriteLine(minus);    
+            Console.ReadKey();
+        }
+
+        static string GetHello()
+        {
+            return "Hello";
+        }
+        static int GetMinus()
+        {
+            int x = 2;
+            int y = 7;
+            return y - x;
+        }
+    }
+}
