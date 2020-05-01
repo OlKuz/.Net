@@ -1,0 +1,19 @@
+using System;
+
+namespace ConsoleApp20
+{
+    class Program
+    {
+        static int OptionalParam(int x, int y, int z=5, int s = 10) 
+        {
+            return x + y + z + s;
+        }
+        static void Main(string[] args)
+        {
+            OptionalParam(x:2, y:3);
+            OptionalParam(y: 2, x: 3, s: 10);
+
+            Console.ReadLine();
+        }
+    }
+}
