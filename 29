@@ -1,0 +1,32 @@
+using System;
+
+namespace ConsoleApp29
+{
+    struct User 
+    {
+        public string name;
+        public int age;
+        public User(string name, int age)
+        {
+            this.name = name;
+            this.age = age;
+        }
+
+        public void Display()
+        {
+            Console.WriteLine($"Name:{name} Age:{age}");
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            User tom = new User("Tom", 34);
+            tom.Display();
+            User bob = new User();
+            bob.Display();
+
+            Console.ReadLine();
+        }
+    }
+}
