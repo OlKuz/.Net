@@ -1,0 +1,25 @@
+using static System.Console;
+using static System.Math;
+using static ConsoleApp33.Geometry;
+
+namespace ConsoleApp33
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double radius = 50;
+            double result = GetArea(radius);
+            WriteLine(result);
+            Read();
+        }
+    }
+    class Geometry
+    {
+        public static double GetArea(double redius)
+        {
+            return PI * redius * redius;
+
+        }
+    }
+}
