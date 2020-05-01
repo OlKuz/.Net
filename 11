@@ -1,0 +1,18 @@
+using System;
+
+namespace ConsoleApp11
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int num1 = 8;
+            int num2 = 6;
+            if (num1 > num2 && num1 == 8)
+            {
+                Console.WriteLine($"Число {num1} больше числа {num2}");
+            }
+
+        }
+    }
+}
