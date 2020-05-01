@@ -1,0 +1,17 @@
+using System;
+
+namespace ConsoleApp25
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var tuple = (5, 10);
+            Console.WriteLine(tuple.Item1);
+            Console.WriteLine(tuple.Item2);
+            tuple.Item1 += 26;
+            Console.WriteLine(tuple.Item1);
+            Console.Read();
+        }
+    }
+}
