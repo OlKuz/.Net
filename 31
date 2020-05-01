@@ -1,0 +1,24 @@
+using System;
+using HelloApp.AccountSpace;
+namespace ConsoleApp31
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Account account = new Account(4);
+        }
+        
+    }
+    namespace AccountSpace
+    {
+        class Account
+        { 
+            public int Id { get; private set; }
+            public Account(int _id)
+            {
+                Id = _id;
+            }
+        }
+    }
+}
