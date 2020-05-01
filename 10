@@ -1,0 +1,25 @@
+using System;
+
+namespace ConsoleApp10
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 10;
+            a += 10;
+            Console.WriteLine("a="+a);
+            a -= 4;
+            Console.WriteLine("a="+a);
+            a *= 2;
+            Console.WriteLine("a="+a);
+            a /= 8;
+            Console.WriteLine("a="+a);
+            a <<= 4;
+            Console.WriteLine("a="+a);
+            a >>= 2;
+            Console.WriteLine("a="+a);
+            Console.ReadLine();
+        }
+    }
+}
