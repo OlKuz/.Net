@@ -1,0 +1,31 @@
+using System;
+
+namespace ConsoleApp27
+{
+    class Person
+    {
+        public string name;
+        public int age;
+
+        public Person() { name = "Неизвестно"; age = 18; }
+        public Person(string n) { name = n; age = 20; }
+        public void GetIn() 
+        {
+            Console.WriteLine($"Name: {name} Age: {age}");
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Person tom = new Person();
+            Person bob = new Person("Bob");
+            Person sam = new Person("Sam");
+
+            bob.GetIn();
+            tom.GetIn();
+            sam.GetIn();
+
+        }
+    }
+}
