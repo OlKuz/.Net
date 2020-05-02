@@ -1,0 +1,19 @@
+using System;
+
+namespace ConsoleApp35
+{
+    class Person 
+    {
+        public string Name { get; set; } = "Tom";
+        public int Age { get; set; } = 35;
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Person person = new Person();
+            Console.WriteLine(person.Name);
+            Console.WriteLine(person.Age);
+            Console.ReadLine();
+        }
+    }
