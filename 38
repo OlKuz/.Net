@@ -1,0 +1,21 @@
+using System;
+
+namespace ConsoleApp38 { 
+    class MathLib
+    {
+    public readonly double K = 23;
+
+         public MathLib(double _k)
+            {
+                K = _k;
+            }
+    
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            MathLib mathLib = new MathLib(3.4);
+            Console.ReadLine();
+        }
+    }
