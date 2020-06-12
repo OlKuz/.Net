@@ -1,0 +1,30 @@
+using System;
+
+namespace ConsoleApp58
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            static void Main(string[] args)
+            {
+                try
+                {
+                    object obj = "you";
+                    int num = (int)obj;     // InvalidCastException
+                    Console.WriteLine($"Результат: {num}");
+                }
+                catch (DivideByZeroException)
+                {
+                    Console.WriteLine("Возникло исключение DivideByZeroException");
+                }
+                catch (IndexOutOfRangeException)
+                {
+                    Console.WriteLine("Возникло исключение IndexOutOfRangeException");
+                }
+
+                Console.Read();
+            }
+        }
+    }
+}
