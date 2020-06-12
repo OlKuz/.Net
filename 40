@@ -1,0 +1,38 @@
+using System;
+
+namespace ConsoleApp40
+{
+    class User
+    {
+        public Phone Phone { get; set; }
+    }
+
+    class Phone
+    {
+        public Company Company { get; set; }
+    }
+
+    class Company
+    {
+        public string Name { get; set; }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            User user = new User();
+            if (user != null)
+            {
+                if (user.Phone != null)
+                {
+                    if (user.Phone.Company != null)
+                    {
+                        string companyName = user.Phone.Company.Name;
+                        Console.WriteLine(companyName);
+                    }
+                }
+            }
+
+        }
+    }
+}
