@@ -1,0 +1,38 @@
+using System;
+
+namespace ConsoleApp68
+{
+    class Program
+    {
+        class Account
+        {
+            public Account(int sum)
+            {
+                Sum = sum;
+            }
+            public int Sum { get; private set; }
+            public void Put(int sum)
+            {
+                Sum += sum;
+            }
+            public void Take(int sum)
+            {
+                if (Sum >= sum)
+                {
+                    Sum -= sum;
+                }
+            }
+        }
+        static void Main(string[] args)
+        {
+            Account acc = new Account(100);
+            acc.Put(20);    
+            Console.WriteLine($"Сумма на счете: {acc.Sum}");
+            acc.Take(70);   
+            Console.WriteLine($"Сумма на счете: {acc.Sum}");
+            acc.Take(180);  
+            Console.WriteLine($"Сумма на счете: {acc.Sum}");
+            Console.Read();
+        }
+    }
+}
